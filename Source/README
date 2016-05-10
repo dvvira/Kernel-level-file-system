@@ -1,0 +1,18 @@
+/*
+	* This file describes the steps to be followed to mount the dedupe filesystem and use it
+	* This code is submitted by 
+	* Denil Vira (dvvira), 
+	* Nitin Tak (ntak), 
+	* Pooja Routray (proutra), 
+	* Sumeet Hemant Bhatia (sbhatia3) 
+	* as a part of CSC 568 - 001 Spring 2015
+*/
+
+0. This code is to be tested on Ubuntu 14.04, 64-bit image with Linux kernel version 3.13.0-24
+1. User needs to have root privileges to use the filesystem. Log in as root and execute the following steps
+2. Replace <Mount Directory> with the absolute path of the desired mount point directory while executing step 4. Do not create the <Mount Directory> just mention the fully qualified path
+3. Execute dos2unix initScript.sh (If dos2unix is not installed on the image execute apt-get install dos2unix)
+4. Execute chmod +x initScript.sh
+5. Execute ./initScript.sh <Mount Directory>
+6. The filesystem will now be mounted at the specified directory
+7. Go to the directory used to mount  the filesystem for testing the filesystem flows. Some of the commands supported by filesystem are echo, touch, mkdir, rmdir, rm -rf, cat, cd, pwd, ls, df
